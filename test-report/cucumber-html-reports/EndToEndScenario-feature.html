@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="js/Chart.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/reporting.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+<title>Cucumber-JVM Reports  - Feature: Flight Booking</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber-JVM Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="feature-overview.html">Features</a></li>
+        <li role="presentation" ><a href="tag-overview.html">Tags</a></li>
+        <li role="presentation" ><a href="step-overview.html">Steps</a></li>
+        <li role="presentation" ><a href="failures-overview.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid" id="build-info">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-1">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Project</th>
+                          <th>Number</th>
+                        <th>Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="info">
+            <td>MercuryTours Automation Report</td>
+                          <td>version 1</td>
+                        <td>28 Jan 2019, 12:55</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<div id="report-lead" class="container-fluid>
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <h2>Feature Report</h2>
+          </div>
+  </div>
+</div>
+
+<div class="container-fluid" id="summary">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table class="stats-table">
+
+        <thead>
+  <tr class="header dont-sort">
+        <th></th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="6">Steps</th>
+    <th colspan="2">Totals</th>
+  </tr>
+  <tr>
+    <th>Feature</th>
+        <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="total">Total</th>
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="skipped">Skipped</th>
+    <th class="pending">Pending</th>
+    <th class="undefined">Undefined</th>
+    <th class="total">Total</th>
+    <th>Duration</th>
+    <th>Status</th>
+  </tr>
+</thead>
+
+        <tbody>
+        <tr>
+          <td class="tagname">Flight Booking</td>
+                    <td  class="passed"    >2</td>
+          <td >0</td>
+          <td class="total">2</td>
+          <td      class="passed"    >18</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">18</td>
+          <td class="duration" data-value="135826227085">2m 15s 826ms</td>
+          <td class="passed">Passed</td>
+        </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="feature">
+        
+<div class="tags indention">
+       <a href="EndToEnd.html">@EndToEnd</a>
+  </div>
+
+        
+<div class="brief passed">
+  <span class="keyword indention">Feature</span>
+  <span class="name">Flight Booking</span>
+  
+
+  </div>
+
+        <div class="description indention">Do Flight booking with Round Trip Flight for one passengers from London to Paris on dates 18 Jan Departure 
+and 28th Jan Arrival and with Economy class</div>
+
+        <div class="elements inner-level">
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention">I book flight Round Trip Flight for one passengers from London to Paris on dates 18 Jan Departure and 28th Jan Arrival and with Economy class</div>
+
+  <div id="element-1" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-2" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">I launch website for Mercury Tours</span>
+  
+  <span class="lead-duration duration">7s 112ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">I click on SIGN ON link</span>
+  
+  <span class="lead-duration duration">2s 018ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I enter username and password and click on continue button</span>
+  
+  <span class="lead-duration duration">8s 283ms</span>
+
+  </div>
+
+        
+
+
+                  <table class="step-arguments">
+                          <tr>
+                                  <td>Username</td>
+                                  <td>Password</td>
+                              </tr>
+                          <tr>
+                                  <td>kateakash</td>
+                                  <td>kateakash</td>
+                              </tr>
+                      </table>
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">I enter flight details along with perferences</span>
+  
+  <span class="lead-duration duration">10s 413ms</span>
+
+  </div>
+
+        
+
+
+                  <table class="step-arguments">
+                          <tr>
+                                  <td>tripType</td>
+                                  <td>noOfPassengers</td>
+                                  <td>departureFrom</td>
+                                  <td>arrivingIn</td>
+                                  <td>departureMonth</td>
+                                  <td>departureDate</td>
+                                  <td>arrivingMonth</td>
+                                  <td>arrivingDate</td>
+                                  <td>airline</td>
+                                  <td>serviceClass</td>
+                              </tr>
+                          <tr>
+                                  <td>roundTrip</td>
+                                  <td>1</td>
+                                  <td>London</td>
+                                  <td>Paris</td>
+                                  <td>January</td>
+                                  <td>18</td>
+                                  <td>January</td>
+                                  <td>28</td>
+                                  <td>Unified Airlines</td>
+                                  <td>coach</td>
+                              </tr>
+                      </table>
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">I select flight and click on continue button</span>
+  
+  <span class="lead-duration duration">3s 693ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">I enter details of passengers</span>
+  
+  <span class="lead-duration duration">5s 869ms</span>
+
+  </div>
+
+        
+
+
+                  <table class="step-arguments">
+                          <tr>
+                                  <td>firstName</td>
+                                  <td>lastName</td>
+                                  <td>meal</td>
+                              </tr>
+                          <tr>
+                                  <td>akash</td>
+                                  <td>kate</td>
+                                  <td>Vegetarian</td>
+                              </tr>
+                      </table>
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I enter details for CC and Billing address and secure booking</span>
+  
+  <span class="lead-duration duration">21s 799ms</span>
+
+  </div>
+
+        
+
+
+                  <table class="step-arguments">
+                          <tr>
+                                  <td>cardType</td>
+                                  <td>cardNumber</td>
+                                  <td>expMonth</td>
+                                  <td>expYear</td>
+                                  <td>ccfirstName</td>
+                                  <td>ccmiddleName</td>
+                                  <td>cclastName</td>
+                                  <td>ccaddress</td>
+                                  <td>cccity</td>
+                                  <td>ccstate</td>
+                                  <td>ccpostalcode</td>
+                                  <td>cccountry</td>
+                              </tr>
+                          <tr>
+                                  <td>Visa</td>
+                                  <td>123123123</td>
+                                  <td>10</td>
+                                  <td>2010</td>
+                                  <td>Soham</td>
+                                  <td>Akash</td>
+                                  <td>Kate</td>
+                                  <td>Banglore</td>
+                                  <td>Banglore</td>
+                                  <td>Banglore</td>
+                                  <td>212323</td>
+                                  <td>INDIA</td>
+                              </tr>
+                      </table>
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">I validate all details on summary page</span>
+  
+  <span class="lead-duration duration">10s 647ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I click on Logg Off button</span>
+  
+  <span class="lead-duration duration">2s 405ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-3">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention">I book flight Round Trip Flight for one passengers from New York to Sydney on dates 24 Jan Departure and 31th Jan Arrival and with First class</div>
+
+  <div id="element-3" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-4">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-4" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">I launch website for Mercury Tours</span>
+  
+  <span class="lead-duration duration">1s 083ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">I click on SIGN ON link</span>
+  
+  <span class="lead-duration duration">1s 601ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I enter username and password and click on continue button</span>
+  
+  <span class="lead-duration duration">6s 741ms</span>
+
+  </div>
+
+        
+
+
+                  <table class="step-arguments">
+                          <tr>
+                                  <td>Username</td>
+                                  <td>Password</td>
+                              </tr>
+                          <tr>
+                                  <td>kateakash</td>
+                                  <td>kateakash</td>
+                              </tr>
+                      </table>
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">I enter flight details along with perferences</span>
+  
+  <span class="lead-duration duration">10s 487ms</span>
+
+  </div>
+
+        
+
+
+                  <table class="step-arguments">
+                          <tr>
+                                  <td>tripType</td>
+                                  <td>noOfPassengers</td>
+                                  <td>departureFrom</td>
+                                  <td>arrivingIn</td>
+                                  <td>departureMonth</td>
+                                  <td>departureDate</td>
+                                  <td>arrivingMonth</td>
+                                  <td>arrivingDate</td>
+                                  <td>airline</td>
+                                  <td>serviceClass</td>
+                              </tr>
+                          <tr>
+                                  <td>roundTrip</td>
+                                  <td>1</td>
+                                  <td>New York</td>
+                                  <td>Sydney</td>
+                                  <td>January</td>
+                                  <td>24</td>
+                                  <td>January</td>
+                                  <td>31</td>
+                                  <td>Blue Skies Airlines</td>
+                                  <td>first</td>
+                              </tr>
+                      </table>
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">I select flight and click on continue button</span>
+  
+  <span class="lead-duration duration">3s 414ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">I enter details of passengers</span>
+  
+  <span class="lead-duration duration">5s 774ms</span>
+
+  </div>
+
+        
+
+
+                  <table class="step-arguments">
+                          <tr>
+                                  <td>firstName</td>
+                                  <td>lastName</td>
+                                  <td>meal</td>
+                              </tr>
+                          <tr>
+                                  <td>vaishali</td>
+                                  <td>kate</td>
+                                  <td>Vegetarian</td>
+                              </tr>
+                      </table>
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I enter details for CC and Billing address and secure booking</span>
+  
+  <span class="lead-duration duration">19s 236ms</span>
+
+  </div>
+
+        
+
+
+                  <table class="step-arguments">
+                          <tr>
+                                  <td>cardType</td>
+                                  <td>cardNumber</td>
+                                  <td>expMonth</td>
+                                  <td>expYear</td>
+                                  <td>ccfirstName</td>
+                                  <td>ccmiddleName</td>
+                                  <td>cclastName</td>
+                                  <td>ccaddress</td>
+                                  <td>cccity</td>
+                                  <td>ccstate</td>
+                                  <td>ccpostalcode</td>
+                                  <td>cccountry</td>
+                              </tr>
+                          <tr>
+                                  <td>Visa</td>
+                                  <td>123123123</td>
+                                  <td>10</td>
+                                  <td>2010</td>
+                                  <td>Akash</td>
+                                  <td>Anil</td>
+                                  <td>Kate</td>
+                                  <td>Pune</td>
+                                  <td>Pune</td>
+                                  <td>Maharashtra</td>
+                                  <td>212323</td>
+                                  <td>INDIA</td>
+                              </tr>
+                      </table>
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">I validate all details on summary page</span>
+  
+  <span class="lead-duration duration">10s 630ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I click on Logg Off button</span>
+  
+  <span class="lead-duration duration">4s 614ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                  </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>
