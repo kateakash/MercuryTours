@@ -10,6 +10,7 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import common.webdriver.driver.TestDriver;
+import common.webdriver.errorReporting.GenerateReport;
 import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
 import cucumber.api.testng.AbstractTestNGCucumberTests;
@@ -53,6 +54,7 @@ public class CucumberTestRunner  extends AbstractTestNGCucumberTests{
 	public void tearDownClass() throws Exception {
 		testNGCucumberRunner.finish();
 		TestDriver.getTestDriverReference().close();
+		GenerateReport.generateCucumberReport("MercuryTours","test-report");
 	}
 
 	public static String getScenarioName() {

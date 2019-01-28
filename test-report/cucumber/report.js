@@ -171,63 +171,63 @@ formatter.match({
   "location": "LoginSteps.launch_website_for_mercury_tours()"
 });
 formatter.result({
-  "duration": 6620222827,
+  "duration": 7112060169,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.click_sign_on()"
 });
 formatter.result({
-  "duration": 1594820191,
+  "duration": 2018581311,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.enter_username_password_continue_with_login_withDataTable(DataTable)"
 });
 formatter.result({
-  "duration": 75137037780,
+  "duration": 8283380164,
   "status": "passed"
 });
 formatter.match({
   "location": "FlightFinderSteps.enter_flight_details_along_with_preferencessss(JournyDetails\u003e)"
 });
 formatter.result({
-  "duration": 9710853279,
+  "duration": 10413225748,
   "status": "passed"
 });
 formatter.match({
   "location": "SelectFlightSteps.select_default_flight()"
 });
 formatter.result({
-  "duration": 4384709680,
+  "duration": 3693553608,
   "status": "passed"
 });
 formatter.match({
   "location": "PaymentSteps.enter_passengers_details(PassengerDetails\u003e)"
 });
 formatter.result({
-  "duration": 5404082785,
+  "duration": 5869422109,
   "status": "passed"
 });
 formatter.match({
   "location": "PaymentSteps.enter_ccdetails_and_billingaddress(CreditCardDetails\u003e)"
 });
 formatter.result({
-  "duration": 18585441330,
+  "duration": 21799348349,
   "status": "passed"
 });
 formatter.match({
   "location": "SummarySteps.validate_details_on_summary_page()"
 });
 formatter.result({
-  "duration": 10276548583,
+  "duration": 10647474895,
   "status": "passed"
 });
 formatter.match({
   "location": "SummarySteps.click_logoff_btn()"
 });
 formatter.result({
-  "duration": 3137175216,
+  "duration": 2405934270,
   "status": "passed"
 });
 formatter.scenario({
@@ -389,63 +389,63 @@ formatter.match({
   "location": "LoginSteps.launch_website_for_mercury_tours()"
 });
 formatter.result({
-  "duration": 1580323799,
+  "duration": 1083375076,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.click_sign_on()"
 });
 formatter.result({
-  "duration": 1603352283,
+  "duration": 1601479055,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.enter_username_password_continue_with_login_withDataTable(DataTable)"
 });
 formatter.result({
-  "duration": 29176860500,
+  "duration": 6741578985,
   "status": "passed"
 });
 formatter.match({
   "location": "FlightFinderSteps.enter_flight_details_along_with_preferencessss(JournyDetails\u003e)"
 });
 formatter.result({
-  "duration": 9557791723,
+  "duration": 10487285965,
   "status": "passed"
 });
 formatter.match({
   "location": "SelectFlightSteps.select_default_flight()"
 });
 formatter.result({
-  "duration": 3610798838,
+  "duration": 3414081541,
   "status": "passed"
 });
 formatter.match({
   "location": "PaymentSteps.enter_passengers_details(PassengerDetails\u003e)"
 });
 formatter.result({
-  "duration": 5476748131,
+  "duration": 5774536073,
   "status": "passed"
 });
 formatter.match({
   "location": "PaymentSteps.enter_ccdetails_and_billingaddress(CreditCardDetails\u003e)"
 });
 formatter.result({
-  "duration": 19077806263,
+  "duration": 19236666786,
   "status": "passed"
 });
 formatter.match({
   "location": "SummarySteps.validate_details_on_summary_page()"
 });
 formatter.result({
-  "duration": 10404422067,
+  "duration": 10630185891,
   "status": "passed"
 });
 formatter.match({
   "location": "SummarySteps.click_logoff_btn()"
 });
 formatter.result({
-  "duration": 2371716055,
+  "duration": 4614057090,
   "status": "passed"
 });
 formatter.uri("UserRegistration.feature");
@@ -622,21 +622,21 @@ formatter.match({
   "location": "LoginSteps.launch_website(String)"
 });
 formatter.result({
-  "duration": 1263383061,
+  "duration": 1906634371,
   "status": "passed"
 });
 formatter.match({
   "location": "RegistrationSteps.click_register_link()"
 });
 formatter.result({
-  "duration": 2576629854,
+  "duration": 2035984777,
   "status": "passed"
 });
 formatter.match({
   "location": "RegistrationSteps.fill_registration_details(RegistrationDetails\u003e)"
 });
 formatter.result({
-  "duration": 17722952136,
+  "duration": 18787361903,
   "status": "passed"
 });
 });
